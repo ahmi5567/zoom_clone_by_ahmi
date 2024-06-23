@@ -108,6 +108,7 @@ const MeetingTypeList = () => {
       />
       {!callDetails ? (
         <MeetingModel
+        buttonText=""
         isOpen={meetingState === "isScheduleMeeting"}
         onClose={() => setMeetingState(undefined)}
         title="Create Meeting"
