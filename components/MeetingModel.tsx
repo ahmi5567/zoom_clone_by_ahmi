@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 
 interface MeetingModelProps {
-  isOpen: Boolean;
+  isOpen: boolean;
   onClose: () => void;
   title: string;
   className?: string;
