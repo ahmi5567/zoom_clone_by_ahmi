@@ -3,15 +3,15 @@ import MeetingTypeList from '@/components/MeetingTypeList';
 const Home = () => {
   const now = new Date();
 
-const options = {
-  hour: '2-digit',
-  minute: '2-digit',
-  hour12: true,
-  timeZone: 'Asia/Karachi',
-};
+  const options = {
+    hour: '2-digit' as '2-digit',
+    minute: '2-digit' as '2-digit',
+    hour12: true,
+    timeZone: 'Asia/Karachi',
+  };
 
-const time = now.toLocaleTimeString('en-US', options);
-const formattedTime = `${time} PST`;
+  const time = now.toLocaleTimeString('en-US', options);
+  const formattedTime = `${time} PST`;
 
   const date = (new Intl.DateTimeFormat('en-US', {
     dateStyle: 'full',
